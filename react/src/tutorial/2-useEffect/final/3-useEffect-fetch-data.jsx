@@ -45,6 +45,7 @@ const UseEffectFetchData = () => {
 			<h3>github users</h3>
 			<ul className="users">
 				{users.map((user) => {
+					console.log(user);
 					const { id, login, avatar_url, html_url } = user;
 					return (
 						<li key={id}>

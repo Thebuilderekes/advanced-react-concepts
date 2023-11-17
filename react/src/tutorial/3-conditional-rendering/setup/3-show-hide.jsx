@@ -1,7 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from "react";
 
-const ShowHide = () => {
-  return <h2>show/hide</h2>;
+const ToggleHeading = () => {
+  const [showHeading, setShowHeading] = useState(false);
+
+  const toggleHeading = () => {
+    setShowHeading(!showHeading);
+  };
+
+  return (
+    <div>
+      <button onClick={toggleHeading}>Toggle Heading</button>
+      {showHeading && <Heading />}
+    </div>
+  );
 };
 
-export default ShowHide;
+const Heading = () => {
+  return <h1>This is the heading</h1>;
+};
+
+export default ToggleHeading;
