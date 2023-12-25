@@ -10,19 +10,23 @@
 // import UseStateEffect from "./tutorial/2-useEffect/setup/1-useEffect-basics"
 // import UseEffectFetchData from "./tutorial/2-useEffect/final/3-useEffect-fetch-data";
 // import MultipleReturns from "./tutorial/3-conditional-rendering/setup/1-multiple-returns";
-//import Navbar from "./navigation-contextAPI/Navbar";
+// import NavLinks from "./navigation-props-drilling/Navlinks";
 //import People from "./globalContext/people.jsx";
-import { useGlobalContext } from "./globalContext/context";
-import People from "./globalContext/people";
-function App() {
+//import { useGlobalContext } from "./globalContext/context";
+//import People from "./globalContext/people";
+//import ItemList from "./listDisplay/List.jsx";
+// import Navbar from "./tutorial/11-react-router/final/Navbar";
 
-  const {userName} = useGlobalContext()
-	return (
-		<div className="container">
-      <h1>hello {userName}</h1>
-      <People userName={userName}/>
-		</div>
-	);
+import UseEffChallenge from "./tutorial/2-useEffect/exercise/UseEffChallenge";
+
+function App() {
+  return (
+    <div className="container">
+      {/*<h1>hello</h1> */}
+      {/* <NavLinks /> */}
+      <UseEffChallenge />
+    </div>
+  );
 }
 
 export default App;
