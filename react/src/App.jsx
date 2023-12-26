@@ -17,14 +17,15 @@
 //import ItemList from "./listDisplay/List.jsx";
 // import Navbar from "./tutorial/11-react-router/final/Navbar";
 
-import UseEffChallenge from "./tutorial/2-useEffect/exercise/UseEffChallenge";
-
+//import UseEffChallenge from "./tutorial/2-useEffect/exercise/UseEffChallenge";
+//import GetCyptoData from "./tutorial/2-useEffect/exercise/GetCryptoData.jsx";
+import MyApp from "./tutorial/9-custom-hooks/exercises/usePrevious.jsx";
 function App() {
   return (
     <div className="container">
       {/*<h1>hello</h1> */}
       {/* <NavLinks /> */}
-      <UseEffChallenge />
+      <MyApp />
     </div>
   );
 }

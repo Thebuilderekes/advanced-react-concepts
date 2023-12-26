@@ -1,8 +1,7 @@
-
 ## Next js tips
-- You can get BIG performance gains if you lower state into the components that need them.
-You can simply do this in some cases before thinking about reaching for react.memo and other hooks 
 
+- You can get BIG performance gains if you lower state into the components that need them.
+  You can simply do this in some cases before thinking about reaching for react.memo and other hooks
 
 - The can be a nested structure about APIs that you will find out in the wild where there can be an array that contains objects each having its own nesting of other objects and so on
 
@@ -16,16 +15,26 @@ Next js notes
 
 - you can do get request in server components
 
-
 ## React
 
+Here's a breakdown of the key differences in destructuring arrays and objects:
+
+### Array Destructuring:
+
+Flexibility in naming: You can assign destructured elements to variables with any names you choose.
+Order matters: Variables are assigned values in the order they appear in the array.
+
+### Object Destructuring:
+
+Property names dictate variable names: You must use the exact property names as the variable names when destructuring.
+Order is not strict: Variables can be assigned in any order, regardless of their order in the object.
+
+### Hooks
 
 - what are pure and impure functions?
 - UseEffect hook is used to handle side effects of impure functions
 - The code you place inside the useEffect hook always runs after your component
   mounts or, in other words, after React has updated the DOM.
-
-
 
 ### Proper react folder structure
 
