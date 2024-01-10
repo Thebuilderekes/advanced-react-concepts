@@ -1,0 +1,13 @@
+.btn {
+  padding: 10px 20px;
+}
+
+.primary-btn {
+  background-color: green;
+  color: white;
+}
+
+.secondary-btn {
+  background-color: yellow;
+  color: black;
+}

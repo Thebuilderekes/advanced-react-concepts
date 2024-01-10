@@ -1,0 +1,10 @@
+.people-list {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+
+	.list-item {
+		background-color: whitesmoke;
+		padding: 10px;
+	}
+}
