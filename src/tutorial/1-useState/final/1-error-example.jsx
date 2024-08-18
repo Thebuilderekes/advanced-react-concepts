@@ -1,19 +1,16 @@
-
-import React, {useState} from 'react';
-
+import React, { useState } from "react";
 
 const ErrorExample = () => {
-  const [title, setTitle] = useState("hello people")
-
+  const [title, setTitle] = useState("hello people");
 
   const handleClick = () => {
-    setTitle("another title")
+    setTitle("another title");
     console.log(title);
   };
   return (
     <React.Fragment>
       <h2>{title}</h2>
-      <button type='button' className='btn' onClick={handleClick}>
+      <button type="button" className="btn" onClick={handleClick}>
         change title
       </button>
     </React.Fragment>
