@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { Todos } from "./List.jsx";
+import styled from "styled-components";
 
 export default function Conditional() {
   const [todoList, setTodoList] = useState([
@@ -22,7 +23,7 @@ export default function Conditional() {
     }
   }
   return (
-    <div>
+    <Section>
       <h3>Conditional rendering</h3>
 
       <Todos
@@ -31,6 +32,12 @@ export default function Conditional() {
         onChange={handleTodoChange}
         onSubmit={addTodoHandler}
       />
-    </div>
-  );
+    </Section>
+  )
 }
+
+const Section = styled.section`
+
+text-align: center;
+
+`
