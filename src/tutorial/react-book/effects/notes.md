@@ -18,3 +18,7 @@ Interacting with the browser's history or location
    Handling potential errors
 
 Continue from Effects and asynchronous code
+
+## State batching
+Batching in React describes the internal implementation detail of React which treats multiple state updates as one state update. The benefit: multiple state updates are batched as one state update and therefore trigger only one re-rendering of the component which improves the rendering performance especially for larger React applications. 
+
